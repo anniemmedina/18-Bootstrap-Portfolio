@@ -6,21 +6,45 @@
 .bg-light {
   background-color: white !important;
 }
+.navbar-brand{
+margin-left: 10px;
+}
 
 /* Jumbotron styles */
 .jumbotron {
 background-color: #BFD7D9;
 height: 710px;
 }
-.col-sm-7 {
-  padding-left: 70px;
-  padding-right: 70px;
+.info {
+  padding-left: 5%;
+  padding-right: 5%;
    }
-   .col-sm-5 img {
-    height: 300px;
-    align-content: flex-start;
-    padding-left: 30px;
-    padding-right: 30px;
+p.lead {
+padding-top: 4px;
+padding-bottom: 5px;
+font-size: 22px;
+   }
+p {
+font-size: 20px;
+width: 80%;
+word-wrap: break-word;
+padding-left: 10px;
+padding-right: 10px;
+margin: 0%;
+}
+.info h1 {
+  width: 80%;
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0%;
+  }
+   .pic img {
+    display: flex;
+    justify-items: flex-end;
+    width: 65%;
+    padding: 10px;
+    margin: 0%;
    }
 
 /* Card styles */
@@ -39,7 +63,11 @@ margin: 32px
 padding: 40px;
  }
  .col-sm-4 img {
-  height: 400px;
+height: 400px;
+ }
+
+ li{
+  padding: 20px;
  }
 
 /* Contact Me styles */
@@ -76,79 +104,9 @@ margin: 1px;
 padding-left: 35px;
 } 
 
-@media only screen and (min-width: 1300px) {
-  /* For desktop: */
-  .jumbotron {padding-left: 15px;
-  padding-right: 15px;
-  font-size: 22px;
-  }
-  .col-sm-5 img {width: 100%;
-    height: auto;
-    margin-left: -70px;
-  margin-top: 15px;}
-  .col-sm-7 {width: 5%;
-    padding: 5%;
-    padding-right: -10px;
-  }
-}
+@media
+do a media quiery for image size at small screen size
 
-@media only screen and (min-width: 1170px) and ( max-width: 1300px ) {
-  /* For desktop: */
-  .jumbotron {padding-left: 10px;
-  padding-right: 10px;
-  font-size: 21px;
-  }
-  .col-sm-5 img {width: 105%;
-    height: auto;
-    margin-left: -75px;
-  margin-top: 25px;}
-  .col-sm-7 {width: 5%;
-    padding: 5%;
-    padding-right: -10px;
-  }
-}
-@media only screen and (min-width: 910px) and ( max-width: 1170px ) {
-  /* For desktop: */
-  .jumbotron {padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-  }
-  .col-sm-5 img {width: 110%;
-    height: auto;
-    margin-left: -80px;
-  margin-top: 40px;}
-  .col-sm-7 {width: 5%;
-    padding: 5%;
-    padding-right: -10px;
-  }
-}
-@media only screen and (min-width: 770px) and ( max-width: 910px ) {
-  /* For desktop: */
-  .jumbotron {padding-left: 10px;
-  padding-right: 10px;
-  font-size: 18px;
-  }
-  .col-sm-5 img {width: 120%;
-    height: auto;
-    margin-left: -85px;
-  margin-top: 45px;}
-  .col-sm-7 {width: 5%;
-    padding: 5%;
-    padding-right: -10px;
-  }
-} 
-@media only screen and (min-width: 575px) and ( max-width: 770px ) {
-  /* For desktop: */
-  .jumbotron {padding-left: 10px;
-  padding-right: 10px;
-  font-size: 17px;
-  }
-  .col-sm-5 img {width: 120%;
-    height: auto;
-    margin-left: -50px;
-  margin-top: 50px;}
-  .col-sm-7 {width: 5%;
-    padding: 5%;
-    padding-right: -10px;
-  }
-} 
+
+fix collumns of about me and lists to be centered content 
+fix about me pic to change size as needed in media quiery
