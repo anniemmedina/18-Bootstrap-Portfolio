@@ -1,112 +1,166 @@
 /* Navigation styles */
-.navbar-nav{
+.navbar-nav {
   margin-left: auto;
-  margin-right: 0 !important;
+  margin-right: 40px !important;
 }
 .bg-light {
   background-color: white !important;
 }
-.navbar-brand{
-margin-left: 10px;
+.navbar-brand {
+  margin-left: 10px;
 }
 
 /* Jumbotron styles */
 .jumbotron {
-background-color: #BFD7D9;
-height: 710px;
+  background-color: #BFD7D9;
+  height: 710px;
 }
 .info {
   padding-left: 5%;
   padding-right: 5%;
-   }
+}
 p.lead {
-padding-top: 4px;
-padding-bottom: 5px;
-font-size: 22px;
-   }
-p {
-font-size: 20px;
-width: 80%;
-word-wrap: break-word;
-padding-left: 10px;
-padding-right: 10px;
-margin: 0%;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+.info p {
+  font-size: 20px;
+  word-wrap: break-word;
+  padding-left: 0%;
+  margin: 0%;
 }
 .info h1 {
   width: 80%;
   word-wrap: break-word;
-  padding-left: 10px;
+  padding-left: 0%;
   padding-right: 10px;
   margin: 0%;
-  }
-   .pic img {
-    display: flex;
-    justify-items: flex-end;
-    width: 65%;
-    padding: 10px;
-    margin: 0%;
-   }
+}
+.pic img {
+  display: flex;
+  justify-items: flex-end;
+  width: 65%;
+  padding: 10px;
+  margin-right: 10%;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
 /* Card styles */
 .cardContainer {
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .card {
   margin: 0 auto;
 }
+.btn-primary {
+  background-color: #BFD7D9;
+  border-color: #BFD7D9;
+  color: black;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card-body h5 {
+  font-size: 22px;
+}
 
-/* About Me styles */
-.container {
-margin: 32px
-} 
-.col-sm-8 {
-padding: 40px;
- }
- .col-sm-4 img {
-height: 400px;
- }
+/* About Me styles */ 
+.container2 {
+  background-color: #FFE6E6;
+  margin-top: 40px;
+}
+.about {
+  padding: 3%;
+  height: 100%;
+}
+.about h1 {
+  font-size: 30px;
+  margin-left: 3%;
+  padding-top: 3%;
+    }
+.about p {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 2%;
+  padding-left: 0%;
+  margin-right: 1%;
+  margin-left: 3%;
+  font-size: 20px;
+  }
+.me img {
+  display: flex;
+  justify-items: flex-end;
+  height: auto;
+  width: 100%;
+}
+.me {
+  padding: 0px;
+}
 
- li{
-  padding: 20px;
- }
+/* Skills styles */
+.container3 {
+  background-color: #BFD7D9;
+  height: 320px;
+}
+.container3 h1 {
+  padding-top: 55px;
+  padding-bottom: 10px;
+  padding-right: 2%;
+  padding-left: 2%;
+  font-size: 35px;
+  margin-left: 5%;
+}
+.container3 li {
+  padding: .75%;
+  font-size: 18px;
+  margin-left: 5%;
+}
 
 /* Contact Me styles */
-.signUp form {
-  margin: 35px auto;
-  background-color: #BFD7D9;
+.contact {
+  margin: 50px auto;
   padding: 25px;
   border-radius: 7px;
+  text-align: center;
 }
-.row h2 {
-  font-size: 28px;
+.contact h2 {
+  font-size: 32px;
+  text-align: center;
 }
 
 /* Footer styles */
-footer {
-  position: absolute;
+.footer {
+  position: flex;
   width: 100%;
   height: 180px;
   line-height: 50px;
   background-color: #BFD7D9;
   cursor: pointer;
-}
-.containerF {
   justify-content: space-evenly;
   align-content: flex-start;
   width: 100%;
   margin-top: 50px;
+  padding-top: 4%;
 }
-.footer img{
-height: 23px;
+.footer img {
+ height: 23px;
 }
-.footer a{
-margin: 1px;
-padding-left: 35px;
+.footer a {
+  padding-left: 35px;
 } 
 
-@media
-do a media quiery for image size at small screen size
+
+/*fix 
+fix buttons
+hover on picture to have quote: 
+<div class="right">
+       <div class="text">
+        <h2>It is always the right time to make the most of your best ideas.</h2>
+       </div>
+    </div>
 
 
-fix collumns of about me and lists to be centered content 
-fix about me pic to change size as needed in media quiery
+
