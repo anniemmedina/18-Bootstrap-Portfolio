@@ -3,11 +3,14 @@
   margin-left: auto;
   margin-right: 40px !important;
 }
+.nav-link {
+  margin-left: 15px;
+}
 .bg-light {
   background-color: white !important;
 }
 .navbar-brand {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 /* Jumbotron styles */
@@ -65,39 +68,6 @@ p.lead {
 }
 .card-body h5 {
   font-size: 22px;
-}
-
-/* About Me styles */ 
-.container2 {
-  background-color: #FFE6E6;
-  margin-top: 40px;
-}
-.about {
-  padding: 3%;
-  height: 100%;
-}
-.about h1 {
-  font-size: 30px;
-  margin-left: 3%;
-  padding-top: 3%;
-    }
-.about p {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 2%;
-  padding-left: 0%;
-  margin-right: 1%;
-  margin-left: 3%;
-  font-size: 20px;
-  }
-.me img {
-  display: flex;
-  justify-items: flex-end;
-  height: auto;
-  width: 100%;
-}
-.me {
-  padding: 0px;
 }
 
 /* Skills styles */
