@@ -1,54 +1,73 @@
 /* Navigation styles */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  padding: 0
+}
 .navbar-nav {
   margin-left: auto;
   margin-right: 40px !important;
 }
-.nav-link {
-  margin-left: 15px;
+.navbar p {
+padding-top: 10px;
 }
-.bg-light {
-  background-color: white !important;
+.nav-link {
+  margin-left: 33px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a.nav-link  {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .navbar-brand {
+  font-size: 17.4px;
+  font-family: "Nunito Sans", 100;
   margin-left: 15px;
+  color: #99999A !important;
+  padding-top: 5px !important;
+  padding-bottom: 0;
+}
+.navbar-brand img {
+  height: 35px;
+  padding-left: 20px;
+}
+.navbar-collapse {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Jumbotron styles */
 .jumbotron {
   background-color: #BFD7D9;
-  height: 710px;
+  height: 90vh;
+  padding-right: 30%;
 }
-.info {
-  padding-left: 5%;
-  padding-right: 5%;
+.containerJ {
+  padding-left: 15px;
+  padding-right: 10%;
+  padding-top: 50px;
 }
-p.lead {
-  padding-top: 4px;
+.containerJ h1 {
   padding-bottom: 5px;
-  font-size: 22px;
+  font-size: 38px;
+  font-family: 'Lobster';
 }
-.info p {
-  font-size: 20px;
+.containerJ h4 {
+  padding-bottom: 5px;
+  font-size: 36px;
+  font-family: 'Open Sans';
+  letter-spacing: 1px;
+}
+.containerJ p {
+  font-size: 65px;
+  font-family: 'Open Sans';
   word-wrap: break-word;
   padding-left: 0%;
   margin: 0%;
-}
-.info h1 {
-  width: 80%;
-  word-wrap: break-word;
-  padding-left: 0%;
-  padding-right: 10px;
-  margin: 0%;
-}
-.pic img {
-  display: flex;
-  justify-items: flex-end;
-  width: 65%;
-  padding: 10px;
-  margin-right: 10%;
-  margin-left: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
 
 /* Card styles */
@@ -59,15 +78,21 @@ p.lead {
 .card {
   margin: 0 auto;
 }
+.card-title {
+  font-size: 32px;
+  font-family: 'Lobster';
+}
 .btn-primary {
   background-color: #BFD7D9;
   border-color: #BFD7D9;
   color: black;
   margin-top: 12px;
   margin-bottom: 5px;
+  font-family: 'Open Sans',500;
 }
-.card-body h5 {
-  font-size: 22px;
+.card-text {
+  font-size: 17px;
+  font-family: 'Open Sans';
 }
 
 /* Skills styles */
@@ -76,12 +101,11 @@ p.lead {
   height: 320px;
 }
 .container3 h1 {
+  font-size: 38px;
+  font-family: 'Lobster';
   padding-top: 55px;
   padding-bottom: 10px;
-  padding-right: 2%;
-  padding-left: 2%;
-  font-size: 35px;
-  margin-left: 5%;
+  padding-left: 50px;
 }
 .container3 li {
   padding: .75%;
@@ -97,42 +121,112 @@ p.lead {
   text-align: center;
 }
 .contact h2 {
-  font-size: 32px;
+  font-family: 'Lobster';
+  font-size: 38px;
   text-align: center;
 }
 
 /* Footer styles */
 .footer {
-  position: flex;
   width: 100%;
   height: 180px;
   line-height: 50px;
   background-color: #BFD7D9;
   cursor: pointer;
   justify-content: space-evenly;
-  align-content: flex-start;
-  width: 100%;
-  margin-top: 50px;
-  padding-top: 4%;
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
 }
 .footer img {
- height: 23px;
+ height: 24px;
+ margin-left: 24px;
+ margin-right: 24px;
+ margin-top: 68px;
+
 }
-.footer a {
-  padding-left: 35px;
-} 
 
+/* Media Quires */
 
-/*To-do 
-resume
-ask abt demo day reg
-fix buttons
-hover on picture to have quote: 
-    <div class="right">
-       <div class="text">
-        <h2>It is always the right time to make the most of your best ideas.</h2>
-       </div>
-    </div>
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  /* Styles */
+  .navbar-brand {
+    margin-left: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0;
+  }
+  .navbar-brand img {
+    height: 35px;
+    padding-left: 0px;
+  }
+  .nav-link {
+    margin-left: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
+  .jumbotron {
+    padding-right: 1%;
+  }
+  .containerJ {
+    padding-left: 1px;
+    padding-top: 50px;
+  }
+  .containerJ h1 {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: 28px;
+  }
+  .containerJ h4 {
+    font-size: 26px;
+    padding-bottom: 5px;
+  }
+  .containerJ p {
+    font-size: 34px;
+    padding-top: 3px;
+  }
 
+  .container3 h1 {
+    font-size: 38px;
+    font-family: 'Lobster';
+    padding-left: 16px;
+  }
 
+  .contact {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .footer img {
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-top: 72px;
+  }
+}
+
+  /* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+  .containerJ h1 {
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  .containerJ h4 {
+    font-size: 20px;
+  }
+  .containerJ p {
+    font-size: 35px;
+  }
+  }
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  /* Styles */
+
+  }
+  
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1729px) {
+  /* Styles */
+  }

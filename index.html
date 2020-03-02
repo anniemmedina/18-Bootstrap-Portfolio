@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Annie M. Medina</title>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+
     <!-- Hotjar Tracking Code for https://anniemmedina.github.io/18-Bootstrap-Portfo -->
 <script>
   (function(h,o,t,j,a,r){
@@ -25,8 +29,8 @@
 
   <body>
     <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://anniemmedina.github.io/18-Bootstrap-Portfolio/#">A. M. Medina</a>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://anniemmedina.github.io/18-Bootstrap-Portfolio/#"> <img src="images/felt-catapillar.png">&ensp;A. M. Medina</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,7 +39,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item">
-      <a class="nav-link" href="h">Work</a>
+      <a class="nav-link" href="h">Portfolio</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="https://anniemmedina.github.io/HW-MyFirstLayout/">About</a>
@@ -47,23 +51,16 @@
 
   <!-- JumboTron -->
 <div class="jumbotron">
-<div class="containerJ">
-  <div class="row">
-     <div class="info col-sm-12 col-md-7 col-lg-6 col-xl-6">
-      <h1 class="display-4">Hello!</h1>
-      <p class="lead">From a UX/UI Designer.</p>
-      <p>Hi, I'm Annie Medina, an artist/designer focused on 2D illustration, interface design and user experience. I currently study UX/UI at UC Irvine and work as an Adult Educator instructing art, design and pre-vocational skills to underserved populations.</p>
-     </div>
-      <div class="pic col-sm-10 col-md-5 col-lg-6 col-xl-6"><img src="images/me.png">
-      </div>
-  </div>
+<div class="containerJ col-lg-12 col-md-12 col-sm-12">
+      <h1>Annie M. Medina</h1>
+      <h4>UX/UI Designer</h4>
+      <p>Hey there! I'm an artist and designer focused on 2D illustration, interface design and user experience. </p>
 </div>
 </div>
 
  <!-- Card Container -->
 <div class="container-fluid" id="portfolio">
   <div class="row">
-
     <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
             <div class="card">
               <img src="images/non-profit.jpg" class="card-img-top" alt="...">
@@ -106,9 +103,9 @@
     <ul>      
     <li>Adobe Suite, MS, Visual Studio, HTML, CSS, InVision
     </li>
-    <li>Printmaking, Illustration, Creative Writing, Bookbinding 
+    <li>icon
     </li>
-    <li>Adult Instruction; Art, Graphic Design, Mental Health, Pre-Vocational Computer & Soft Skills</li>
+    <li></li>
   </ul>
 </div>
 
@@ -116,7 +113,9 @@
 <!-- Contact Me -->
   <div class="contact">
     <form>
-      <h2>anniemmedina@gmail.com</h2>
+      <div contenteditable>
+        <h2>annie<span style="color: #BFD7D9">m</span>medina@gmail.com</h2>
+    </div>
       <div class="form-group">
         <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
@@ -157,7 +156,7 @@
       </div>
       
       <div class="text-center">
-        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Me</a>
+        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalContactForm">Contact Me</a>
       </div>
     </form>
   </div>
