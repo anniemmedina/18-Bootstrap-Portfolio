@@ -43,37 +43,40 @@ a.nav-link  {
 /* Jumbotron styles */
 .jumbotron {
   background-color: #BFD7D9;
-  height: 90vh;
-  padding-right: 30%;
+  height: 100vh;
+  /* padding-right: 30%;*/
 }
 .containerJ {
   padding-left: 15px;
-  padding-right: 10%;
-  padding-top: 50px;
+  /* padding-right: 10%;*/
+  padding-top: 40px;
 }
 .containerJ h1 {
   padding-bottom: 5px;
-  font-size: 38px;
+ /*  font-size: 38px;*/
   font-family: 'Lobster';
 }
 .containerJ h4 {
   padding-bottom: 5px;
-  font-size: 36px;
+ /*  font-size: 36px;*/
   font-family: 'Open Sans';
   letter-spacing: 1px;
 }
 .containerJ p {
-  font-size: 65px;
+  /* font-size: 55px;*/
   font-family: 'Open Sans';
+  line-height: 125%;
   word-wrap: break-word;
   padding-left: 0%;
   margin: 0%;
 }
 
 /* Card styles */
+.container-fluid {
+  padding-top: 10px;
+}
 .cardContainer {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 .card {
   margin: 0 auto;
@@ -97,20 +100,26 @@ a.nav-link  {
 
 /* Skills styles */
 .container3 {
+  width: 100%;
+  height: 280px;
   background-color: #BFD7D9;
-  height: 320px;
 }
-.container3 h1 {
+.container3 h2 {
   font-size: 38px;
   font-family: 'Lobster';
-  padding-top: 55px;
+  padding-top: 45px;
   padding-bottom: 10px;
   padding-left: 50px;
 }
-.container3 li {
-  padding: .75%;
-  font-size: 18px;
-  margin-left: 5%;
+.container3 img {
+ height: 45px;
+ padding-right: 1%;
+ margin-top: 15px;
+ margin-left: 50px;
+ justify-content: space-evenly;
+ list-style-type: none;
+ display: inline-block;
+ text-align: center;
 }
 
 /* Contact Me styles */
@@ -143,13 +152,11 @@ a.nav-link  {
  margin-left: 24px;
  margin-right: 24px;
  margin-top: 68px;
-
 }
 
 /* Media Quires */
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+/* Smartphones & ipads (portrait) ----------- */
+@media only screen and (max-width : 400px) {
   /* Styles */
   .navbar-brand {
     margin-left: 0px;
@@ -168,6 +175,7 @@ a.nav-link  {
 
   .jumbotron {
     padding-right: 1%;
+    height: 55vh;
   }
   .containerJ {
     padding-left: 1px;
@@ -176,14 +184,14 @@ a.nav-link  {
   .containerJ h1 {
     padding-top: 5px;
     padding-bottom: 3px;
-    font-size: 28px;
+    /* font-size: 28px;*/
   }
   .containerJ h4 {
-    font-size: 26px;
+    /* font-size: 26px;*/
     padding-bottom: 5px;
   }
   .containerJ p {
-    font-size: 34px;
+    /* font-size: 34px;*/
     padding-top: 3px;
   }
 
@@ -205,28 +213,124 @@ a.nav-link  {
   }
 }
 
-  /* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* small (portrait) ----------- */
+@media only screen and (min-device-width : 401px) and (max-device-width : 799px) and (orientation : portrait) {
   /* Styles */
+  .navbar-brand {
+    margin-left: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0;
+  }
+  .navbar-brand img {
+    height: 35px;
+    padding-left: 0px;
+  }
+  .nav-link {
+    margin-left: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .jumbotron {
+    padding-right: 1%;
+    height: 60vh;
+  }
+  .containerJ {
+    padding-left: 1px;
+    padding-top: 40px;
+  }
   .containerJ h1 {
-    padding-bottom: 5px;
-    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    /* font-size: 30px;*/
   }
   .containerJ h4 {
-    font-size: 20px;
+    /* font-size: 28px;*/
+    padding-bottom: 5px;
   }
   .containerJ p {
-    font-size: 35px;
+    /* font-size: 40px;*/
+    padding-top: 3px;
+  }
+
+  .container3 h1 {
+    font-size: 38px;
+    font-family: 'Lobster';
+    padding-left: 16px;
+  }
+
+  .contact {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .footer img {
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-top: 72px;
   }
   }
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
+@media only screen  and (min-device-width : 860px) and (max-device-width : 1224px)  {
   /* Styles */
+  .navbar-brand {
+    margin-left: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0;
+  }
+  .navbar-brand img {
+    height: 35px;
+    padding-left: 0px;
+  }
+  .nav-link {
+    margin-left: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
+  .jumbotron {
+    padding-right: 1%;
+    height: 65vh;
+  }
+  .containerJ {
+    padding-left: 1px;
+    padding-top: 50px;
+  }
+  .containerJ h1 {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    /*font-size: 30px;*/
+  }
+  .containerJ h4 {
+    font-size: 28px;
+    padding-bottom: 5px;
+  }
+  .containerJ p {
+    /*font-size: 40px;*/
+    padding-top: 3px;
+  }
+
+  .container3 h1 {
+    font-size: 38px;
+    font-family: 'Lobster';
+    padding-left: 16px;
+  }
+
+  .contact {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .footer img {
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-top: 72px;
+  }
   }
   
   /* Large screens ----------- */
-  @media only screen  and (min-width : 1729px) {
+  @media only screen  and (min-device-width : 1224px) and (max-device-width : 2000px) {
   /* Styles */
+
   }
